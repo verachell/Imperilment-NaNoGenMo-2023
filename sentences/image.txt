@@ -1,0 +1,6 @@
+The photo was of a _ONEIMG_, and _AINAME_ _CORRECTLY_ _LABELLED_ it as a _ONEIMG_
+There was a _ONEIMG_ in the photo, _YET_ _AINAME_ _MISTAKENLY_ _LABELLED_ it as a _WRONGIMG_
+_AINAME_ _LABELLED_ the photo of a _ONEIMG_ _CORRECTLY_ as a _ONEIMG_
+_AINAME_ _MISTOOK_ the image of a _ONEIMG_ as a _WRONGIMG_
+An image of a _ONEIMG_ was _LABELLED_ _CORRECTLY_ as a _ONEIMG_ by _AINAME_
+A _ONEIMG_ was _CORRECTLY_ _LABELLED_ as a _ONEIMG_ by _AINAME_
