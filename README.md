@@ -30,7 +30,7 @@ This generated story consists of 3 alternating timelines:
 
 3. one in a future in 2031 where society entrusts AI with judicial decisions
 
-This is not a case where the story's very plot comes seemingly out of nowhere, but rather where the rhetoric and repetition necessary for the parody is filled in by the algorithm according to the "bones" of the template. This template is written in YeetWords.
+This is not a case where the story's very plot comes seemingly out of nowhere, but rather where the rhetoric and repetition necessary for this satire is filled in by the algorithm according to the "bones" of the template. This template is written in YeetWords.
 
 ## Credits
 
