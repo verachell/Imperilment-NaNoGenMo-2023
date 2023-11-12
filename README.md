@@ -4,8 +4,8 @@ Generates >50000 words of a science fiction satire about what happens when socie
 ## Imperilment
 You can view 2 examples of the generated output at
 
-1
-2
+1. [It started with StatAssessor](https://github.com/verachell/Imperilment-NaNoGenMo-2023/blob/main/EXAMPLE1_It-started-with-StatAssessor.md)
+2. [It started with AiDecree](https://github.com/verachell/Imperilment-NaNoGenMo-2023/blob/main/EXAMPLE2_It-started-with-AiDecree.md) 
 
 ## Usage - how to run this program
 
