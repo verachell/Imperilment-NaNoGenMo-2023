@@ -1,0 +1,141 @@
+REFGENDER male.names = malenames
+REFGENDER female.names = femalenames
+LOWCASE lsur = surnames
+SUPCASE finalsurname = lsur
+ASSIGNLIST leftai = "Deep" + "Ai" + "Trained" + "Data" + "Stat" + "Info"
+ASSIGNLIST rightai = "Verdict" + "Decree" + "Decision" + "Resolver" + "Assessor" + "Arbiter" + "Ruling" + "Net"
+ASSIGNLIST 2015 = "2015"
+ASSIGNLIST 2024 = "2024"
+ASSIGNLIST 2031 = "2031"
+ASSIGNLIST ainame1 = leftai 1
+ASSIGNLIST ainame2 = rightai 1
+ASSIGNLIST correctly = "correctly" + "accurately" + "properly" + "appropriately" 
+ASSIGNLIST yet = "yet" + "but" + "unfortunately" + "however,"
+WORDJOIN fullroadsigns = roadsigns + " sign"
+ASSIGNLIST roadstuff = fullroadsigns + roadstructures + roadvehicles
+ASSIGNLIST roadplaces = roadstructures + places
+ASSIGNLIST carheadline = "self driving car _MISTOOK_ _ONEROADITEM_ for _WRONGROADITEM_, person dead" + "person dead when self driving car _MISTAKENLY_ _LABELLED_ _ONEROADITEM_ for _WRONGROADITEM_" + "_ONEROADITEM_ _MISTOOK_ for _WRONGROADITEM_ by self driving car, person dead"
+ASSIGNLIST numberkids = "one child" + "two children" + "three children"
+WORDJOIN trees = treetypes + " tree"
+WORDJOIN jobspl = essentialjobs + "s"
+ASSIGNLIST imgobj = trees + portablenouns + places + largenouns + landforms + clothestops + animals
+ASSIGNLIST ainame = "_AINAME1__AINAME2_"
+ASSIGNCATALOG allwords =  wfolder + correctly + yet + ainame1 + ainame2 + ainame + fullroadsigns + roadstuff + roadplaces + numberkids + jobspl
+ASSIGNLIST title = "It started with _AINAME_"
+ASSIGNLIST intro = "This is an algorithmically generated work of fiction"
+ASSIGNLIST ending = "THE END"
+
+GEN person 500 binary
+surname 1 finalsurname
+GENEND
+
+GEN otherperson 100 binary
+surname 1 finalsurname
+GENEND
+
+
+DESC imgpara
+LOOP 2--8
+ASSIGNLIST oneimg = imgobj 1
+ASSIGNLIST wrongimg = imgobj - oneimg
+ASSIGNCATALOG allwords = allwords + oneimg
+ASSIGNCATALOG allwords = allwords + wrongimg
+WRITE image allwords
+LOOPEND
+NEWPARA
+DESCEND
+
+DESC imgchapter
+NEWCHAPTER
+FORMAT F 
+WRITE 2015 allwords
+FORMAT ACPS
+LOOP 1000W
+LOOP 1--3
+CALL imgpara
+LOOPEND
+WRITE warnings allwords
+NEWPARA
+LOOPEND
+DESCEND
+
+DESC carnewsflash
+ASSIGNLIST oneroaditem = roadstuff 1
+ASSIGNLIST someroaditem = roadstuff - oneroaditem
+ASSIGNLIST wrongroaditem = someroaditem 1
+ASSIGNCATALOG allwords = allwords + oneroaditem + wrongroaditem
+NEWPARA
+FORMAT ACBT
+WRITE carheadline allwords
+NEWLINE
+FORMAT ACPS
+WRITE carnews allwords 3 order
+SHIFT person
+SHIFT otherperson
+NEWPARA
+FORMAT ACPS
+DESCEND
+
+DESC carpara
+LOOP 2--10 
+WRITE traffic allwords
+LOOPEND
+NEWPARA
+DESCEND
+
+DESC carchapter
+NEWCHAPTER
+FORMAT F
+WRITE 2024 allwords
+LOOP 2000W
+FORMAT ACPS
+LOOP 2--8
+CALL carpara
+LOOPEND
+CALL carnewsflash
+LOOPEND
+DESCEND
+
+DESC prisonpara
+LOOP 3--9
+NEWPARA
+SHIFT person
+ASSIGNLIST specialjobspl = jobspl 1
+ASSIGNCATALOG allwords = allwords + specialjobspl
+LOOP 4--10
+WRITE prison allwords
+LOOPEND
+LOOPEND
+DESCEND
+
+
+DESC prisonchapter
+NEWCHAPTER
+FORMAT F
+WRITE 2031 allwords
+FORMAT ACPI
+WRITE 2031announce allwords
+FORMAT ACPS
+NEWPARA
+LOOP 2000W
+CALL prisonpara
+LOOPEND
+DESCEND
+
+FORMAT F
+WRITE title allwords
+FORMAT I
+WRITE intro allwords
+LOOP 50000W
+CALL imgchapter
+CALL carchapter
+CALL prisonchapter
+LOOPEND
+
+NEWCHAPTER
+NEWLINE
+FORMAT ACS
+WRITE final allwords
+NEWPARA
+WRITE ending allwords
+
