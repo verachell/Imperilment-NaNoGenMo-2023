@@ -1,0 +1,7 @@
+passenger
+passenger in another vehicle
+traffic officer
+pedestrian
+cyclist
+runner
+driver of another vehicle

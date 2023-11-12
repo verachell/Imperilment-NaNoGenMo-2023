@@ -1,0 +1,24 @@
+car
+SUV
+truck
+pickup truck
+golf cart
+ATV
+sedan
+coup
+sports car
+race car
+camper van
+van
+minivan
+motor home
+fire truck
+ambulance
+police car
+bus
+tractor
+motorcycle
+bicycle
+scooter
+tram
+

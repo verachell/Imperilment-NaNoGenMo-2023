@@ -1,0 +1,45 @@
+stop
+yield
+no parking
+speed limit
+no u-turn
+no left turn
+no right turn
+left turn only
+right turn only
+bike lane
+do not pass
+keep right
+keep left
+wrong way
+do not enter
+no motor vehicles
+one way
+one hour parking
+two hour parking
+sidewalk closed
+road closed
+railroad crossing
+winding road
+draw bridge
+merge
+right lane ends
+left lane ends
+road narrows
+narrow bridge
+steep grade
+farm vehicles
+deer
+horse-drawn vehicles
+cattle
+no outlet
+dead end
+freeway ends
+one lane road ahead
+slow traffic ahead
+rest area
+school zone
+airport
+hospital
+
+

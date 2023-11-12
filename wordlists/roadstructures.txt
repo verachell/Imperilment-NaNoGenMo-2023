@@ -1,0 +1,36 @@
+bridge
+overpass
+underpass
+on-ramp
+off-ramp
+divided highway
+curb
+parking space
+bus station
+train station
+parking lot
+pier
+stairway
+causeway
+tunnel
+field
+fence
+red traffic light
+green traffic light
+orange traffic light
+road cone
+turn
+roundabout
+traffic circle
+storefront
+slope
+sharp turn
+toll booth
+parking attendant booth
+crosswalk
+sidewalk
+left turn lane
+right turn lane
+4 way stop intersection
+traffic light intersection
+

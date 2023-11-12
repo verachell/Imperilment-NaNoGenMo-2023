@@ -1,0 +1,38 @@
+pharmacist
+chiropractor
+doctor
+dentist
+optometrist
+counselor
+psychiatrist
+psychologist
+physical therapist
+occupational therapist
+speech therapist
+audiologist
+podiatrist
+firefighter
+prison officer
+cattle farmer
+fishery worker
+pork farmer
+sheep farmer
+grain farmer
+vegetable farmer
+veterinarian
+bus driver
+transportation worker
+mechanic
+construction worker
+utility worker
+electrician
+plumber
+IT specialist
+librarian
+food distributor
+chef
+cafeteria worker
+sanitation engineer
+commercial cleaner
+
+

@@ -1,0 +1,16 @@
+sunny
+raining
+sleeting
+snowing
+drizzling
+wet
+windy
+warm
+cold
+dry
+storming
+cloudy
+misty
+overcast
+a clear day
+

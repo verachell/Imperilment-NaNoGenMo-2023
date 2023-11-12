@@ -1,0 +1,10 @@
+mandate
+aim
+directive
+goal
+command
+order
+bidding
+injunction
+edict
+
